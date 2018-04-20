@@ -1,0 +1,20 @@
+{
+  "name": "ClaudyView",
+  "version": "0.1.0",
+  "description": "Wordpress theme for Claudy View",
+  "main": "index.php",
+  "author": "Alessandro Vechi",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss style.css",
+    "watch-css": "nodemon -e scss -x npm run build-css"
+  },
+  "devDependencies": {
+    "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleangel1212/ClaudyView.git"
+  },
+  "license": "ISC"
+}
