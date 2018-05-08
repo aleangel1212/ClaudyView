@@ -18,15 +18,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
-
-
+	<link href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site container">
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="header" role="banner">
+		<nav class="level">
+		  <p class="level-item nav-cloud">
+		    <a href=<?= get_permalink( get_page_by_path( 'blog' ) )?> class="link">Blog</a>
+		  </p>
+		  <p class="level-item nav-cloud is-size-4">
+		    <a href=<?= get_permalink( get_page_by_path( 'comics' ) )?> class="link">Comics</a>
+		  </p>
+		  <p class="level-item nav-cloud is-size-3">
+		    <a href=<?= get_permalink( get_page_by_path( 'portfolio' ) )?> class="link">Portfolio</a>
+		  </p>
+		  <p class="level-item nav-cloud is-size-4">
+		    <a href=<?= get_permalink( get_page_by_path( 'bio' ) )?> class="link">Bio</a>
+		  </p>
+		  <p class="level-item nav-cloud">
+		    <a href=<?= get_permalink( get_page_by_path( 'characters' ) )?> class="link">Characters</a>
+		  </p>
+		</nav>
 	</header>
 
-	<div id="content" class="site-content">
+	<section id="content" class="section">

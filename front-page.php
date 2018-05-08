@@ -12,16 +12,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main row" role="main">
-			
-			<div>
-				<div class="field">
-				  <label class="label">Label</label>
-				  <div class="control">
-				    <input class="input" type="text" placeholder="Text input">
-				  </div>
-				  <p class="help">This is a help text</p>
-				</div>
-			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
