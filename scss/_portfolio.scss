@@ -4,5 +4,17 @@
 
 .portfolio-content {
 	background-color: $cloud-color-dark;
-	height: 500px;
+}
+
+.portfolio-image {
+	display: inline-block;
+	margin: 0.5rem;
+
+	img {
+		background-color: black;
+		background-size: contain;
+		max-height: 250px;
+		width: auto !important;
+		box-shadow: $box-shadow;
+	}
 }

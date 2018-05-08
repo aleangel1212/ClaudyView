@@ -6411,5 +6411,14 @@ html {
   line-height: 0; }
 
 .portfolio-content {
-  background-color: #79bff5;
-  height: 500px; }
+  background-color: #79bff5; }
+
+.portfolio-image {
+  display: inline-block;
+  margin: 0.5rem; }
+  .portfolio-image img {
+    background-color: black;
+    background-size: contain;
+    max-height: 250px;
+    width: auto !important;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
