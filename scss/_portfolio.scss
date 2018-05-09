@@ -1,24 +1,3 @@
-.cloud-header {
-	line-height: 0;
-}
-
-.portfolio-content {
-	background-color: $cloud-color-dark;
-}
-
-.portfolio-thumbnail {
-	display: inline-block;
-	margin: 0.5rem;
-
-	img {
-		background-color: black;
-		background-size: contain;
-		max-height: 250px;
-		width: auto !important;
-		box-shadow: $box-shadow;
-	}
-}
-
 .portfolio-image {
 	padding: 0 2rem;
 

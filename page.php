@@ -1,38 +1,33 @@
-<?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package cah-starter
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<?php 
+	global $post;
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	$args = array(
+		'numberposts' => -1,
+		'category_name' => $post->post_name
+	);
+	
+	$posts = get_posts($args);
+?>
 
-			<?php
-			while ( have_posts() ) : the_post();
+<div class="cloud-header">
+	<img src=<?= get_stylesheet_directory_uri() . "/public/images/clouds-header.png" ?>>
+</div>
+<section class="section page-content has-text-centered">
+	<?php
+		foreach ($posts as $post) {
+	?>
 
-				get_template_part( 'partials/content', 'page' );
+		<a href=<?= get_permalink($post) ?>>
+			<figure class="image page-thumbnail">
+			  <img src=<?= get_the_post_thumbnail_url($post) ?>>
+			</figure>
+		</a>
+		
+	<?php
+		}
+	?>
+</section>
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-// get_sidebar();
-get_footer();
+<?php get_footer(); ?>
