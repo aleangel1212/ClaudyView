@@ -6,7 +6,7 @@
 	background-color: $cloud-color-dark;
 }
 
-.portfolio-image {
+.portfolio-thumbnail {
 	display: inline-block;
 	margin: 0.5rem;
 
@@ -15,6 +15,18 @@
 		background-size: contain;
 		max-height: 250px;
 		width: auto !important;
+		box-shadow: $box-shadow;
+	}
+}
+
+.portfolio-image {
+	padding: 0 2rem;
+
+	img {
+		width: auto;
+		height: unset;
+		max-height: 500px;
+		margin: auto;
 		box-shadow: $box-shadow;
 	}
 }

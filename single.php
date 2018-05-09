@@ -9,9 +9,11 @@
 <section class="section portfolio-content">
 	<div class="columns">
 		<div class="column">
-			<figure class="image">
-			  <img src=<?= the_post_thumbnail_url() ?>>
-			</figure>
+			<a href="<?= the_post_thumbnail_url() ?>">
+				<figure class="image portfolio-image">
+				  <img src=<?= the_post_thumbnail_url() ?>>
+				</figure>
+			</a>
 		</div>
 		<div class="column">
 			<h3 class="title is-3 has-text-cursive"><?= the_title() ?></h3>
@@ -22,13 +24,13 @@
 			<br/>
 			<a class="button is-text">
 			    <span class="icon is-small">
-			      <i class="fas fa-envelope"></i>
+			      <i class="fa fa-envelope"></i>
 			    </span>
 			    <span>claudyviewvisions@gmail.com</span>
 			</a>
 			<a class="button is-text">
 			    <span class="icon is-small">
-			      <i class="fas fa-instagram"></i>
+			      <i class="fa fa-instagram"></i>
 			    </span>
 			    <span>@claudyview</span>
 			</a>

@@ -18,7 +18,7 @@
 	?>
 
 		<a href=<?= get_permalink($post) ?>>
-			<figure class="image portfolio-image">
+			<figure class="image portfolio-thumbnail">
 			  <img src=<?= get_the_post_thumbnail_url($post) ?>>
 			</figure>
 		</a>
