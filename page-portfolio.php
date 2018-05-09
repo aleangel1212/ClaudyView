@@ -10,7 +10,7 @@
 ?>
 
 <div class="cloud-header">
-	<img src=<?= get_stylesheet_directory_uri()."/public/images/clouds-header.png" ?>>
+	<img src=<?= get_stylesheet_directory_uri() . "/public/images/clouds-header.png" ?>>
 </div>
 <section class="section portfolio-content has-text-centered">
 	<?php

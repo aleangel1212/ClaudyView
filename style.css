@@ -1112,10 +1112,10 @@ a.box:active {
     color: #4a4a4a;
     text-decoration: underline; }
     .button.is-text:hover, .button.is-text.is-hovered, .button.is-text:focus, .button.is-text.is-focused {
-      background-color: whitesmoke;
+      background-color: #79bff5;
       color: #363636; }
     .button.is-text:active, .button.is-text.is-active {
-      background-color: #e8e8e8;
+      background-color: #61b4f3;
       color: #363636; }
     .button.is-text[disabled] {
       background-color: transparent;
@@ -6395,6 +6395,9 @@ label.panel-block {
 
 html {
   background-image: url("public/images/clouds.png"); }
+
+.has-text-cursive {
+  font-family: cursive; }
 
 .header .level {
   max-width: 40rem;

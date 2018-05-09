@@ -19,6 +19,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 	<?php wp_head(); ?>
 </head>
