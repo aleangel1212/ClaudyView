@@ -2,12 +2,34 @@ html {
 	background-image: url('public/images/clouds.png');
 }
 
+h3 {
+	font-family: cursive;
+}
+
 .has-text-cursive {
 	font-family: cursive;
 }
 
+.single-content {
+	background-color: $cloud-color-dark;
+}
+
 .page-content {
 	background-color: $cloud-color-dark;
+}
+
+.content {
+	display: inline-block;
+}
+
+.alignleft {
+	float: left;
+	margin: 1rem 1rem 1rem 0;
+}
+
+.alignright {
+	float: right;
+	margin: 1rem 0 1rem 1rem;
 }
 
 .page-thumbnail {

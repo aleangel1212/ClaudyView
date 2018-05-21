@@ -29,10 +29,10 @@
 	<header id="masthead" class="header" role="banner">
 		<nav class="level">
 		  <p class="level-item nav-cloud">
-		    <a href=<?= get_permalink( get_page_by_path( 'blog' ) )?> class="link">Blog</a>
+		    <a href=<?=get_home_url();?> class="link">Home</a>
 		  </p>
 		  <p class="level-item nav-cloud is-size-4">
-		    <a href=<?= get_permalink( get_page_by_path( 'comics' ) )?> class="link">Comics</a>
+		    <a href=<?= get_permalink( get_page_by_path( 'blog' ) )?> class="link">Blog</a>
 		  </p>
 		  <p class="level-item nav-cloud is-size-3">
 		    <a href=<?= get_permalink( get_page_by_path( 'portfolio' ) )?> class="link">Portfolio</a>

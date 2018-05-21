@@ -160,12 +160,12 @@
   .is-active.pagination-link,
   .is-active.pagination-ellipsis {
     outline: none; }
-  [disabled].button, [disabled].input,
-  [disabled].textarea, .select select[disabled], [disabled].file-cta,
-  [disabled].file-name, [disabled].pagination-previous,
-  [disabled].pagination-next,
-  [disabled].pagination-link,
-  [disabled].pagination-ellipsis {
+  .button[disabled], .input[disabled],
+  .textarea[disabled], .select select[disabled], .file-cta[disabled],
+  .file-name[disabled], .pagination-previous[disabled],
+  .pagination-next[disabled],
+  .pagination-link[disabled],
+  .pagination-ellipsis[disabled] {
     cursor: not-allowed; }
 
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
@@ -6396,11 +6396,28 @@ label.panel-block {
 html {
   background-image: url("public/images/clouds.png"); }
 
+h3 {
+  font-family: cursive; }
+
 .has-text-cursive {
   font-family: cursive; }
 
+.single-content {
+  background-color: #79bff5; }
+
 .page-content {
   background-color: #79bff5; }
+
+.content {
+  display: inline-block; }
+
+.alignleft {
+  float: left;
+  margin: 1rem 1rem 1rem 0; }
+
+.alignright {
+  float: right;
+  margin: 1rem 0 1rem 1rem; }
 
 .page-thumbnail {
   display: inline-block;
@@ -6426,9 +6443,9 @@ html {
   border-bottom-right-radius: 50%;
   padding: 0.5rem 0 1rem 0; }
 
-.portfolio-image {
+.single-image {
   padding: 0 2rem; }
-  .portfolio-image img {
+  .single-image img {
     width: auto;
     height: unset;
     max-height: 500px;

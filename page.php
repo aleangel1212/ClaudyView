@@ -15,6 +15,10 @@
 	<img src=<?= get_stylesheet_directory_uri() . "/public/images/clouds-header.png" ?>>
 </div>
 <section class="section page-content has-text-centered">
+	<h3 class="title is-3"><?=the_title();?></h3>
+	<div class="content has-text-left">
+		<?=apply_filters('the_content', $post->post_content); ?>
+	</div>
 	<?php
 		foreach ($posts as $post) {
 	?>
