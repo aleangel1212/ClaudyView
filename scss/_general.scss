@@ -2,20 +2,26 @@ html {
 	background-image: url('public/images/clouds.png');
 }
 
+hr {
+	margin: 0.5rem 0;
+	border: none;
+	height: 1px;
+	background-color: $grey-dark;
+}
+
 h3 {
 	font-family: cursive;
 }
 
+a {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
 .has-text-cursive {
 	font-family: cursive;
-}
-
-.single-content {
-	background-color: $cloud-color-dark;
-}
-
-.page-content {
-	background-color: $cloud-color-dark;
 }
 
 .content {
@@ -32,6 +38,10 @@ h3 {
 	margin: 1rem 0 1rem 1rem;
 }
 
+.page-content {
+	background-color: $cloud-color-dark;
+}
+
 .page-thumbnail {
 	display: inline-block;
 	margin: 0.5rem;
@@ -41,6 +51,27 @@ h3 {
 		background-size: contain;
 		max-height: 250px;
 		width: auto !important;
+		box-shadow: $box-shadow;
+	}
+}
+
+.single-page {
+	background-color: $cloud-color-dark;
+}
+
+.single-content {
+	max-width: 800px;
+	margin: auto;
+}
+
+.single-image {
+	padding: 0 2rem;
+
+	img {
+		width: auto;
+		height: unset;
+		max-height: 500px;
+		margin: auto;
 		box-shadow: $box-shadow;
 	}
 }

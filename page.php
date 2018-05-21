@@ -16,9 +16,13 @@
 </div>
 <section class="section page-content has-text-centered">
 	<h3 class="title is-3"><?=the_title();?></h3>
-	<div class="content has-text-left">
-		<?=apply_filters('the_content', $post->post_content); ?>
-	</div>
+
+	<?php if($post->post_content != ''): ?>
+		<div class="content has-text-left">
+			<?=apply_filters('the_content', $post->post_content); ?>
+		</div>
+	<?php endif; ?>
+	
 	<?php
 		foreach ($posts as $post) {
 	?>
