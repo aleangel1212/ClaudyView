@@ -24,6 +24,10 @@ a {
 	font-family: cursive;
 }
 
+.vertical {
+	flex-direction: column;
+}
+
 .content {
 	display: inline-block;
 }
@@ -40,6 +44,11 @@ a {
 
 .page-content {
 	background-color: $cloud-color-dark;
+
+	.content {
+		max-width: 800px;
+		margin: auto;
+	}
 }
 
 .page-thumbnail {

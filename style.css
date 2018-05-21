@@ -6414,6 +6414,9 @@ a {
 .has-text-cursive {
   font-family: cursive; }
 
+.vertical {
+  flex-direction: column; }
+
 .content {
   display: inline-block; }
 
@@ -6427,6 +6430,9 @@ a {
 
 .page-content {
   background-color: #79bff5; }
+  .page-content .content {
+    max-width: 800px;
+    margin: auto; }
 
 .page-thumbnail {
   display: inline-block;
@@ -6466,7 +6472,8 @@ a {
   background-color: #9bdaf1;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  padding: 0.5rem 0 1rem 0; }
+  padding: 0.5rem 0 1rem 0;
+  margin-right: 0 !important; }
 
 .blog-posts {
   max-width: 800px;

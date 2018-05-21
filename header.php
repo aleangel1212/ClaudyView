@@ -27,7 +27,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site container">
 	<header id="masthead" class="header" role="banner">
-		<nav class="level">
+		<nav class="level is-mobile">
 		  <p class="level-item nav-cloud">
 		    <a href=<?=get_home_url();?> class="link">Home</a>
 		  </p>

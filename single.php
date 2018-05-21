@@ -7,7 +7,7 @@
 	<img src=<?= get_stylesheet_directory_uri() . "/public/images/clouds-header.png" ?>>
 </div>
 <section class="section single-page">
-	<div class="columns">
+	<div class="columns <?= (in_category('blog') ? 'vertical' : '') ?>">
 		
 		<?php if(has_post_thumbnail()): ?>
 			<div class="column">
