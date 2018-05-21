@@ -1,23 +1,7 @@
-<?php
-/**
- * The Front Page Template
- *
- * I wish it was more explicit how this worked, other than "Name it front-page.php and it
- * will change the front page." Edit this to change the front page.
- *
- * @package cah-starter
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<section class="section">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main row" role="main">
+</section>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-// get_sidebar();
-get_footer();
-
-?>
+<?php get_footer(); ?>
