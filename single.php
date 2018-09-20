@@ -1,6 +1,8 @@
 <?php 
 	get_header();
 	the_post();
+
+	$custom = get_post_custom();
 ?>
 
 <div class="cloud-header">
@@ -9,7 +11,15 @@
 <section class="section single-page">
 	<div class="columns <?= (in_category('blog') ? 'vertical' : '') ?>">
 		
-		<?php if(has_post_thumbnail()): ?>
+		<?php if($custom['video']): 
+				parse_str( parse_url( $custom['video'][0], PHP_URL_QUERY ), $url_vars );
+				
+		?>	
+			<div class="column">
+				<iframe src="https://www.youtube.com/embed/<?=$url_vars['v']?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+
+		<?php elseif(has_post_thumbnail()): ?>
 			<div class="column">
 				<a href="<?= the_post_thumbnail_url(); ?>">
 					<figure class="image single-image">
