@@ -10,7 +10,7 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="<?= (!is_front_page() ? 'cloud-background' : '') ?>">
 <head>
 	<?php // All scripts should be loaded in functions.php using cah_starter_scripts() or equivalent ?>
 

@@ -6394,7 +6394,7 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 html {
-  background-image: url("public/images/clouds.png"); }
+  background-color: #0a0a0a; }
 
 hr {
   margin: 0.5rem 0;
@@ -6410,6 +6410,9 @@ a {
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
+
+.cloud-background {
+  background-image: url("public/images/clouds.png"); }
 
 .has-text-cursive {
   font-family: cursive; }
