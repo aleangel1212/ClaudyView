@@ -41,7 +41,7 @@
 		    <a href=<?= get_permalink( get_page_by_path( 'bio' ) )?> class="link">Bio</a>
 		  </p>
 		  <p class="level-item nav-cloud">
-		    <a href=<?= get_permalink( get_page_by_path( 'characters' ) )?> class="link">Characters</a>
+		    <a href=<?= get_permalink( get_page_by_path( 'contact' ) )?> class="link">Contact</a>
 		  </p>
 		</nav>
 	</header>
