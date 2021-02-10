@@ -11,6 +11,17 @@
 	$posts = get_posts($args);
 ?>
 
+<?php if($post->post_name == 'portfolio' || $post->post_name == 'animatics'): ?>
+<nav class="level is-mobile sub-nav">
+	<p class="level-item sub-nav-cloud">
+		<a href=<?= get_permalink( get_page_by_path( 'portfolio' ) )?> class="link">Portfolio</a>
+	</p>
+	<p class="level-item sub-nav-cloud is-size-4">
+		<a href=<?= get_permalink( get_page_by_path( 'portfolio/animatics' ) )?> class="link">Animatics</a>
+	</p>
+</nav>
+<?php endif; ?>
+
 <div class="cloud-header">
 	<img src=<?= get_stylesheet_directory_uri() . "/public/images/clouds-header.png" ?>>
 </div>
