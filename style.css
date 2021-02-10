@@ -6487,6 +6487,16 @@ iframe {
   padding: 0.5rem 0 1rem 0;
   margin-right: 0 !important; }
 
+.sub-nav {
+  max-width: 20rem;
+  margin: auto; }
+  .sub-nav .sub-nav-cloud {
+    background-color: #9bdaf1;
+    border-radius: 50%;
+    padding: 0.5rem 0 1rem 0;
+    margin-right: 0 !important;
+    margin: 0 -2rem; }
+
 .blog-posts {
   max-width: 800px;
   margin: auto; }

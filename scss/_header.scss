@@ -1,17 +1,30 @@
 .header .level {
-	max-width: 40rem;
-	align-items: start;
-	margin: auto;
+  max-width: 40rem;
+  align-items: start;
+  margin: auto;
 }
 
 .cloud-header {
-	line-height: 0;
+  line-height: 0;
 }
 
 .nav-cloud {
-	background-color: $cloud-color;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-	padding: 0.5rem 0 1rem 0;
-	margin-right: 0 !important;
+  background-color: $cloud-color;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 0.5rem 0 1rem 0;
+  margin-right: 0 !important;
+}
+
+.sub-nav {
+  max-width: 20rem;
+  margin: auto;
+
+  .sub-nav-cloud {
+    background-color: $cloud-color;
+    border-radius: 50%;
+    padding: 0.5rem 0 1rem 0;
+    margin-right: 0 !important;
+    margin: 0 -2rem;
+  }
 }
